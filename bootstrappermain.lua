@@ -148,5 +148,5 @@ Runserv.RenderStepped:Connect(function()
     rainbow = rainbow + _G.breatherate
     if RGBTXTLABEL~=nil and loading == true then RGBTXTLABEL.TextColor3=color end 
 end)
-loadstring(game:HttpGet("",true))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shit863/EPIKHub-Bootstrapper/master/Main.lua",true))();
 loading = false;
