@@ -2,8 +2,6 @@ local ProccessStarted = tick()
 local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
 local Runserv = game:GetService("RunService")
-local Camera = workspace.CurrentCamera;
-local Center = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y + 150/ 2);
 local Loading = true
 local LoadingCompleted = false
 local RGBTXTLABEL
@@ -33,7 +31,7 @@ function LoadBootstrapper()
     Bootstrapper.Parent = Loader
     Bootstrapper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Bootstrapper.BackgroundTransparency = 1.000
-    Bootstrapper.Position = UDim2.new(0, Center.x, 0, Center.y)
+    Bootstrapper.Position = UDim2.new(0.331547588, 0, 0.309452534, 0)
     Bootstrapper.Size = UDim2.new(0, 646, 0, 411)
     Bootstrapper.Image = "rbxassetid://3570695787"
     Bootstrapper.ImageColor3 = Color3.fromRGB(30, 30, 30)
