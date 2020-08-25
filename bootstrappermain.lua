@@ -33,7 +33,7 @@ function LoadBootstrapper()
     Bootstrapper.Parent = Loader
     Bootstrapper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Bootstrapper.BackgroundTransparency = 1.000
-    Bootstrapper.Position = UDim2.new(Center.x, 0, Center.y, 0)
+    Bootstrapper.Position = UDim2.new(0, Center.x, 0, Center.y)
     Bootstrapper.Size = UDim2.new(0, 646, 0, 411)
     Bootstrapper.Image = "rbxassetid://3570695787"
     Bootstrapper.ImageColor3 = Color3.fromRGB(30, 30, 30)
