@@ -143,7 +143,6 @@ Runserv.RenderStepped:Connect(function()
             BlurM:Destroy()
         end)    
     end    
-    circle.Position = Vector2.new(mouse.X,mouse.Y+35)
     color = Color3.fromHSV(math.acos(math.cos(rainbow*math.pi))/math.pi,.8,1)
     rainbow = rainbow + _G.breatherate
     if RGBTXTLABEL~=nil and loading == true then RGBTXTLABEL.TextColor3=color end 
