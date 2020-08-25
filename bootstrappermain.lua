@@ -3,6 +3,7 @@ local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
 local Runserv = game:GetService("RunService")
 local Loading = true
+local LoadingCompleted = false
 local RGBTXTLABEL
 local StatusLabelM
 local LoaderG
@@ -136,7 +137,8 @@ _G.breatherate = 0.0010
 local rainbow = 0
 local color = Color3.fromHSV(0,0,0)
 Runserv.RenderStepped:Connect(function()
-    if loading == false then
+    if loading == false and LoadingCompleted == false then
+        LoadingCompleted = true
         pcall(function()
             StatusLabelM.Text = "Script Loaded in "..tick()-ProccessStarted.." seconds!"
             wait(1.5)
