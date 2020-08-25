@@ -2,6 +2,7 @@ local ProccessStarted = tick()
 local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
 local Runserv = game:GetService("RunService")
+local Camera = workspace.CurrentCamera;
 local Center = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y + 150/ 2);
 local Loading = true
 local LoadingCompleted = false
