@@ -131,7 +131,7 @@ function LoadBootstrapper()
     LP1.TextWrapped = true
     RGBTXTLABEL = LP1
 end    
-
+LoadBootstrapper()
 _G.breatherate = 0.0010
 local rainbow = 0
 Runserv.RenderStepped:Connect(function()
