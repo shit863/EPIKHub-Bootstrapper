@@ -134,6 +134,7 @@ end
 LoadBootstrapper()
 _G.breatherate = 0.0010
 local rainbow = 0
+local color = Color3.fromHSV(0,0,0)
 Runserv.RenderStepped:Connect(function()
     if loading == false then
         pcall(function()
